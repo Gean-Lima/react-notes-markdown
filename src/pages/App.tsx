@@ -95,7 +95,7 @@ function App() {
           </div>
 
           <div className="navbar-right">
-            <a href="#" target="_blank">
+            <a href="https://github.com/Gean-Lima/react-notes-markdown" target="_blank">
               <i className='bx bxl-github bx-sm'></i>
             </a>
           </div>

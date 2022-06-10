@@ -31,6 +31,13 @@ function NoteEditor({ note, updateNote }: Props) {
     updateNote(newContetNote);
   }, [contentEdited]);
 
+  useEffect(() => {
+    document.querySelector('.NoteEditorTextarea')?.addEventListener('scroll', (event) => {
+      const target = (event.target as Element);
+      document.querySelector('.NoteEditorLines')?.scrollTo(0, target.scrollTop);
+    });
+  }, []);
+
   return (
     <div className="NoteEditor">
       <div className="NoteEditorBar">

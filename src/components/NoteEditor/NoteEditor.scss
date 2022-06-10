@@ -50,13 +50,21 @@
     height: 100%;
     width: 100%;
 
+    .NoteEditorLines {
+      height: calc(100% - 42px - 32px);
+      overflow: hidden;
+    }
+
     .NoteEditorLinesList {
+      padding: 6px 0;
       list-style-type: none;
 
       li {
         text-align: right;
         font-size: .8rem;
-        padding: 0 6px 3.5px;
+        padding: 0 6px;
+        font-family: monospace;
+        line-height: 1.5;
 
         &:nth-child(even) {
           background-color: #ddd;
@@ -65,12 +73,15 @@
     }
 
     .NoteEditorTextarea {
+      line-height: 1.5;
+      font-size: .8rem;
       overflow: auto;
       padding: 6px 8px;
       resize: none;
       height: calc(100% - 42px - 32px);
       width: 100%;
       box-shadow: 0 0 5px rgba(0, 0, 0, .3) inset;
+      font-family: monospace;
     }
   }
 }
