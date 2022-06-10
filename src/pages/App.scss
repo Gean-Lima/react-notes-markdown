@@ -1,0 +1,69 @@
+.App {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+
+  .AppColumn1 {
+    width: 20%;
+    background-color: #e7e7e7;
+  }
+
+  .AppColumn2 {
+    width: 100%;
+  }
+
+  .AppBoxInputNewNote {
+    display: none;
+    margin-bottom: 5px;
+
+    &.visible {
+      display: block;
+    }
+
+    p {
+      font-size: .6rem;
+      padding: 2px;
+    }
+
+    .AppInputNewNote {
+      width: 100%;
+      padding: 6px 8px;
+      box-shadow: 0 0 3px rgba(0, 0, 0, .2) inset;
+      border: 1px solid #ddd;
+
+      &:focus {
+        outline: 2px solid black;
+      }
+    }
+  }
+}
+
+.Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  border-bottom: 1px solid #ddd;
+  height: 42px;
+  background-color: #fff;
+
+  * {
+    color: #444;
+  }
+
+  .navbar-left, .navbar-center, .navbar-right {
+    padding: 8px 0;
+  }
+
+  .navbar-left {
+    margin: 0 auto 0 0;
+  }
+
+  .navbar-center {
+    margin: 0 auto 0 auto;
+  }
+
+  .navbar-right {
+    margin: 0 0 0 auto;
+  }
+}

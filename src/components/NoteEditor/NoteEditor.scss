@@ -1,0 +1,76 @@
+.NoteEditor {
+  height: 100%;
+  background-color: #fff;
+
+  .NoteEditorBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #d3d3d3;
+
+    .NoteEditorBarButtons {
+      display: flex;
+      margin-left: auto;
+
+      button {
+        padding: 8px;
+      }
+    }
+
+    .NoteEditorTitle {
+      display: flex;
+
+      h3 {
+        font-size: .8rem;
+        font-weight: bold;
+        padding: 8px;
+        width: 200px;
+        background: #fff;
+      }
+
+      button {
+        padding: 8px;
+      }
+    }
+  }
+
+  .NoteEditorGrid {
+    height: 100%;
+    width: 100%;
+    display: flex;
+  }
+
+  .NoteEditorPreview {
+    width: 100%;
+    padding: 6px 8px;
+  }
+
+  .NoteEditorBoxAreaEditor {
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+    .NoteEditorLinesList {
+      list-style-type: none;
+
+      li {
+        text-align: right;
+        font-size: .8rem;
+        padding: 0 6px 3.5px;
+
+        &:nth-child(even) {
+          background-color: #ddd;
+        }
+      }
+    }
+
+    .NoteEditorTextarea {
+      overflow: auto;
+      padding: 6px 8px;
+      resize: none;
+      height: calc(100% - 42px - 32px);
+      width: 100%;
+      box-shadow: 0 0 5px rgba(0, 0, 0, .3) inset;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.ListNotes {
+  min-height: 100%;
+  border-right: 1px solid #ddd;
+
+  h4 {
+    font-size: .8rem;
+    font-weight: bold;
+    padding: 8px;
+  }
+
+  .ListNotesNoNotes {
+    padding: 20px;
+    font-size: .8rem;
+    text-align: center;
+
+    i.bx {
+      margin-right: 2px;
+    }
+  }
+
+  .ItemNote {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .8rem !important;
+    cursor: pointer;
+    background-color: #fff;
+
+    &:nth-child(even) {
+      background-color: #eee;
+    }
+
+    &:hover {
+      background-color: #d9d9d9;
+
+      .ItemNoteColumn2 {
+        display: block;
+      }
+    }
+
+    .ItemNoteColumn1 {
+      padding: 6px 8px;
+      width: 100%;
+    }
+
+    .ItemNoteColumn2 {
+      display: none;
+
+      button {
+        padding: 8px;
+      }
+    }
+  }
+}
